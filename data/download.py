@@ -7,7 +7,7 @@ import json
 
 """
 
-Funciones de procesamiento de archivos
+Funcion de procesamiento de archivos nacional en general
 
 """
 
@@ -121,6 +121,18 @@ def procesarNacional(file):
     os.chdir("..")
     with open("nacional.json", "w") as nac:
         nac.write(datos_estadisticas_nac)
+
+
+"""
+
+Funcion de procesamiento de archivos departamentales por departamento
+
+"""
+
+def procesarDepartamental(self, file):
+    print "Procesando Nacional: " +os.path.abspath(file)
+    with open(file,"r") as file:
+
 
 
 

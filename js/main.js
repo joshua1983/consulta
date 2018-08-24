@@ -59,6 +59,9 @@ var consultas = new Vue({
         },
         loadDetalleMap: function(dataid){
             console.log(dataid);
+        },
+        loadDetalleMapCol: function(dataid){
+            console.log(dataid);
         }
     },
     beforeDestroy: function(){
