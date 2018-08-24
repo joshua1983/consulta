@@ -1,0 +1,205 @@
+<Boletin_Consolidado><Boletin>
+  <Numero V="0008"/>
+  <Boletin_Departamental V="0012"/>
+  <Tipo_Boletin V="DEPARTAMENTAL"/>
+  <Desc_Corporacion V="CONSULTA POPULAR"/>
+  <Departamento V="27"/>
+  <Desc_Departamento V="SANTANDER"/>
+  <Municipio V="178"/>
+  <Desc_Municipio V="SAN BENITO"/>
+  <Dia V="21"/>
+  <Mes V="8"/>
+  <Anio V="2018"/>
+  <Hora V="14"/>
+  <Minuto V="15"/>
+  <Mesas_Instaladas V="9"/>
+  <Mesas_Informadas V="9"/>
+  <Porc_Mesas_Informadas V="100,00"/>
+  <Potencial_Sufragantes V="3121"/>
+  <Detalle_Circunscripcion>
+    <lin>
+      <Circunscripcion V="0"/>
+      <Desc_Circunscripcion V="NACIONAL"/>
+      <Detalle_Pregunta>
+        <lin>
+          <Pregunta V="001"/>
+          <Total_Sufragantes V="3121"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="1464"/>
+          <Porc_Votos_Validos V="046,90"/>
+          <Votos_No_Marcados V="811"/>
+          <Porc_Votos_No_Marcados V="025,98"/>
+          <Votos_Nulos V="846"/>
+          <Porc_Votos_Nulos V="027,10"/>
+        </lin>
+        <lin>
+          <Pregunta V="002"/>
+          <Total_Sufragantes V="3121"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="1402"/>
+          <Porc_Votos_Validos V="044,92"/>
+          <Votos_No_Marcados V="894"/>
+          <Porc_Votos_No_Marcados V="028,64"/>
+          <Votos_Nulos V="825"/>
+          <Porc_Votos_Nulos V="026,43"/>
+        </lin>
+        <lin>
+          <Pregunta V="003"/>
+          <Total_Sufragantes V="3121"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="1351"/>
+          <Porc_Votos_Validos V="043,28"/>
+          <Votos_No_Marcados V="945"/>
+          <Porc_Votos_No_Marcados V="030,27"/>
+          <Votos_Nulos V="825"/>
+          <Porc_Votos_Nulos V="026,43"/>
+        </lin>
+        <lin>
+          <Pregunta V="004"/>
+          <Total_Sufragantes V="3121"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="1793"/>
+          <Porc_Votos_Validos V="057,44"/>
+          <Votos_No_Marcados V="695"/>
+          <Porc_Votos_No_Marcados V="022,26"/>
+          <Votos_Nulos V="633"/>
+          <Porc_Votos_Nulos V="020,28"/>
+        </lin>
+        <lin>
+          <Pregunta V="005"/>
+          <Total_Sufragantes V="3121"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="1459"/>
+          <Porc_Votos_Validos V="046,74"/>
+          <Votos_No_Marcados V="783"/>
+          <Porc_Votos_No_Marcados V="025,08"/>
+          <Votos_Nulos V="879"/>
+          <Porc_Votos_Nulos V="028,16"/>
+        </lin>
+        <lin>
+          <Pregunta V="006"/>
+          <Total_Sufragantes V="3121"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="1598"/>
+          <Porc_Votos_Validos V="051,20"/>
+          <Votos_No_Marcados V="702"/>
+          <Porc_Votos_No_Marcados V="022,49"/>
+          <Votos_Nulos V="821"/>
+          <Porc_Votos_Nulos V="026,30"/>
+        </lin>
+        <lin>
+          <Pregunta V="007"/>
+          <Total_Sufragantes V="3121"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="1302"/>
+          <Porc_Votos_Validos V="041,71"/>
+          <Votos_No_Marcados V="851"/>
+          <Porc_Votos_No_Marcados V="027,26"/>
+          <Votos_Nulos V="968"/>
+          <Porc_Votos_Nulos V="031,01"/>
+        </lin>
+      </Detalle_Pregunta>
+      <Detalle_Opcion>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="1002"/>
+          <Porc V="068,44"/>
+          <Pregunta V="001"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="462"/>
+          <Porc V="031,55"/>
+          <Pregunta V="001"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="636"/>
+          <Porc V="045,36"/>
+          <Pregunta V="002"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="766"/>
+          <Porc V="054,63"/>
+          <Pregunta V="002"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="546"/>
+          <Porc V="040,41"/>
+          <Pregunta V="003"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="805"/>
+          <Porc V="059,58"/>
+          <Pregunta V="003"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="861"/>
+          <Porc V="048,02"/>
+          <Pregunta V="004"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="932"/>
+          <Porc V="051,97"/>
+          <Pregunta V="004"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="790"/>
+          <Porc V="054,14"/>
+          <Pregunta V="005"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="669"/>
+          <Porc V="045,85"/>
+          <Pregunta V="005"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="775"/>
+          <Porc V="048,49"/>
+          <Pregunta V="006"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="823"/>
+          <Porc V="051,50"/>
+          <Pregunta V="006"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="601"/>
+          <Porc V="046,15"/>
+          <Pregunta V="007"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="701"/>
+          <Porc V="053,84"/>
+          <Pregunta V="007"/>
+        </lin>
+      </Detalle_Opcion>
+    </lin>
+  </Detalle_Circunscripcion>
+</Boletin>
+</Boletin_Consolidado>

@@ -1,0 +1,205 @@
+<Boletin_Consolidado><Boletin>
+  <Numero V="0008"/>
+  <Boletin_Departamental V="0012"/>
+  <Tipo_Boletin V="DEPARTAMENTAL"/>
+  <Desc_Corporacion V="CONSULTA POPULAR"/>
+  <Departamento V="88"/>
+  <Desc_Departamento V="CONSULADOS"/>
+  <Municipio V="770"/>
+  <Desc_Municipio V="TURQUIA"/>
+  <Dia V="21"/>
+  <Mes V="8"/>
+  <Anio V="2018"/>
+  <Hora V="14"/>
+  <Minuto V="15"/>
+  <Mesas_Instaladas V="8"/>
+  <Mesas_Informadas V="8"/>
+  <Porc_Mesas_Informadas V="100,00"/>
+  <Potencial_Sufragantes V="162"/>
+  <Detalle_Circunscripcion>
+    <lin>
+      <Circunscripcion V="0"/>
+      <Desc_Circunscripcion V="NACIONAL"/>
+      <Detalle_Pregunta>
+        <lin>
+          <Pregunta V="001"/>
+          <Total_Sufragantes V="162"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="102"/>
+          <Porc_Votos_Validos V="062,96"/>
+          <Votos_No_Marcados V="47"/>
+          <Porc_Votos_No_Marcados V="029,01"/>
+          <Votos_Nulos V="13"/>
+          <Porc_Votos_Nulos V="008,02"/>
+        </lin>
+        <lin>
+          <Pregunta V="002"/>
+          <Total_Sufragantes V="162"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="71"/>
+          <Porc_Votos_Validos V="043,82"/>
+          <Votos_No_Marcados V="52"/>
+          <Porc_Votos_No_Marcados V="032,09"/>
+          <Votos_Nulos V="39"/>
+          <Porc_Votos_Nulos V="024,07"/>
+        </lin>
+        <lin>
+          <Pregunta V="003"/>
+          <Total_Sufragantes V="162"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="69"/>
+          <Porc_Votos_Validos V="042,59"/>
+          <Votos_No_Marcados V="59"/>
+          <Porc_Votos_No_Marcados V="036,41"/>
+          <Votos_Nulos V="34"/>
+          <Porc_Votos_Nulos V="020,98"/>
+        </lin>
+        <lin>
+          <Pregunta V="004"/>
+          <Total_Sufragantes V="162"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="64"/>
+          <Porc_Votos_Validos V="039,50"/>
+          <Votos_No_Marcados V="52"/>
+          <Porc_Votos_No_Marcados V="032,09"/>
+          <Votos_Nulos V="46"/>
+          <Porc_Votos_Nulos V="028,39"/>
+        </lin>
+        <lin>
+          <Pregunta V="005"/>
+          <Total_Sufragantes V="162"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="76"/>
+          <Porc_Votos_Validos V="046,91"/>
+          <Votos_No_Marcados V="64"/>
+          <Porc_Votos_No_Marcados V="039,50"/>
+          <Votos_Nulos V="22"/>
+          <Porc_Votos_Nulos V="013,58"/>
+        </lin>
+        <lin>
+          <Pregunta V="006"/>
+          <Total_Sufragantes V="162"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="91"/>
+          <Porc_Votos_Validos V="056,17"/>
+          <Votos_No_Marcados V="61"/>
+          <Porc_Votos_No_Marcados V="037,65"/>
+          <Votos_Nulos V="10"/>
+          <Porc_Votos_Nulos V="006,17"/>
+        </lin>
+        <lin>
+          <Pregunta V="007"/>
+          <Total_Sufragantes V="162"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="87"/>
+          <Porc_Votos_Validos V="053,70"/>
+          <Votos_No_Marcados V="29"/>
+          <Porc_Votos_No_Marcados V="017,90"/>
+          <Votos_Nulos V="46"/>
+          <Porc_Votos_Nulos V="028,39"/>
+        </lin>
+      </Detalle_Pregunta>
+      <Detalle_Opcion>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="65"/>
+          <Porc V="063,72"/>
+          <Pregunta V="001"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="37"/>
+          <Porc V="036,27"/>
+          <Pregunta V="001"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="11"/>
+          <Porc V="015,49"/>
+          <Pregunta V="002"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="60"/>
+          <Porc V="084,50"/>
+          <Pregunta V="002"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="21"/>
+          <Porc V="030,43"/>
+          <Pregunta V="003"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="48"/>
+          <Porc V="069,56"/>
+          <Pregunta V="003"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="25"/>
+          <Porc V="039,06"/>
+          <Pregunta V="004"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="39"/>
+          <Porc V="060,93"/>
+          <Pregunta V="004"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="48"/>
+          <Porc V="063,15"/>
+          <Pregunta V="005"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="28"/>
+          <Porc V="036,84"/>
+          <Pregunta V="005"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="35"/>
+          <Porc V="038,46"/>
+          <Pregunta V="006"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="56"/>
+          <Porc V="061,53"/>
+          <Pregunta V="006"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="61"/>
+          <Porc V="070,11"/>
+          <Pregunta V="007"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="26"/>
+          <Porc V="029,88"/>
+          <Pregunta V="007"/>
+        </lin>
+      </Detalle_Opcion>
+    </lin>
+  </Detalle_Circunscripcion>
+</Boletin>
+</Boletin_Consolidado>

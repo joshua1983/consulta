@@ -1,0 +1,121 @@
+/*
+* CSS principal
+*/
+
+@font-face {
+    font-family: 'lato';
+        src: url('../fonts/Lato-Regular.ttf');
+        font-weight: normal;
+        font-style: normal;	
+    }
+@font-face {
+        font-family: 'yanone';
+            src: url('../fonts/YanoneKaffeesatz-Regular.ttf');
+            font-weight: normal;
+            font-style: normal;	
+        }
+
+body{
+    font-family: 'Lato';
+    font-size: 0.8em;
+}
+#estadisticas{
+    padding-left: 4%;
+    text-align: right
+}
+#consultas{
+    padding-left: 1%;
+    justify-content: center;
+}
+#comMapaSantander{
+    padding-top: 13%
+}
+#comMapaColombia{
+    padding-top: 13%
+}
+#img_encabezado{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+.img_si{
+    width: 100%;
+}
+
+.img_no{
+    width: 100%;
+}
+.titulo_mapa_santander_web{
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    color: rgb(212, 126, 29);
+    text-decoration: underline rgb(212, 126, 29);
+}
+.incluir_texto{
+    text-align:center;
+    color:#666;
+    max-width:115px;
+    float:left;
+    background:#ececec;
+    margin-left:1%;
+    padding-left:3%;
+    padding-right: 4%;
+    padding: 2%;
+    border-radius:0 10px 10px 0;
+    margin-bottom:5px;
+    vertical-align: middle;
+    display: table-cell
+}
+.espacios_textos{ 
+    vertical-align: middle;
+    display: table-cell;
+}
+.incluir_texto3{ 
+    border-bottom:solid 1px #928f87;
+}
+.colombia_bt, .santander_bt{ position:absolute; float:right; right:10px; top:19%; text-align:center; width:84px; height:86px; border:solid 1px #cfcfcf; cursor:pointer; z-index:100; background:url(../img/colombia.png) #dee2e3 17px 19px; background-repeat: no-repeat;}
+.santander_bt{ top:136px; background:url(../img/santa.png) #dee2e3 14px 19px; background-repeat: no-repeat;}
+.colombia_bt .titu, .santander_bt .titu {  font-family:"oswald-light",Verdana, Geneva, sans-serif; font-size:15px; color:#424242; background:#91ca03; color:#fff;}
+.colombia_bt:hover{  background:url(../img/colombia2.png) #dee2e3 17px 19px; background-repeat: no-repeat;}
+.santander_bt:hover{ background:url(../img/santa2.png) #dee2e3 14px 19px; background-repeat: no-repeat;}
+
+/*
+*  Preguntas
+*/
+.preguntas{
+    padding-top: 5%;
+}
+.pregunta{
+    padding: 1%;
+}
+.numero{
+    background-color: gainsboro;
+}
+
+.numeroBajoUmbral{
+    background-color: aliceblue;
+    color: black;
+    border-color:white;
+}
+
+.numeroAltoUmbral{
+    background-color: #91ca03;
+    color: white;
+    border-color:white;
+}
+
+@media screen and (max-width: 1012px) {
+    #img_encabezado{
+        display: none;
+    }
+}
+@media screen and (min-width: 1013px){
+    #btn_ver_resultados{
+        display: none;
+    }
+    .colombia_bt{
+        top: 29%;
+        right: 8%;
+    }
+}

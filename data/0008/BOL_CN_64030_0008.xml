@@ -1,0 +1,205 @@
+<Boletin_Consolidado><Boletin>
+  <Numero V="0008"/>
+  <Boletin_Departamental V="0012"/>
+  <Tipo_Boletin V="DEPARTAMENTAL"/>
+  <Desc_Corporacion V="CONSULTA POPULAR"/>
+  <Departamento V="64"/>
+  <Desc_Departamento V="PUTUMAYO"/>
+  <Municipio V="030"/>
+  <Desc_Municipio V="VILLAGARZON"/>
+  <Dia V="21"/>
+  <Mes V="8"/>
+  <Anio V="2018"/>
+  <Hora V="14"/>
+  <Minuto V="15"/>
+  <Mesas_Instaladas V="48"/>
+  <Mesas_Informadas V="48"/>
+  <Porc_Mesas_Informadas V="100,00"/>
+  <Potencial_Sufragantes V="17197"/>
+  <Detalle_Circunscripcion>
+    <lin>
+      <Circunscripcion V="0"/>
+      <Desc_Circunscripcion V="NACIONAL"/>
+      <Detalle_Pregunta>
+        <lin>
+          <Pregunta V="001"/>
+          <Total_Sufragantes V="17197"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="8786"/>
+          <Porc_Votos_Validos V="051,09"/>
+          <Votos_No_Marcados V="4418"/>
+          <Porc_Votos_No_Marcados V="025,69"/>
+          <Votos_Nulos V="3993"/>
+          <Porc_Votos_Nulos V="023,21"/>
+        </lin>
+        <lin>
+          <Pregunta V="002"/>
+          <Total_Sufragantes V="17197"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="9071"/>
+          <Porc_Votos_Validos V="052,74"/>
+          <Votos_No_Marcados V="4449"/>
+          <Porc_Votos_No_Marcados V="025,87"/>
+          <Votos_Nulos V="3677"/>
+          <Porc_Votos_Nulos V="021,38"/>
+        </lin>
+        <lin>
+          <Pregunta V="003"/>
+          <Total_Sufragantes V="17197"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="8674"/>
+          <Porc_Votos_Validos V="050,43"/>
+          <Votos_No_Marcados V="4232"/>
+          <Porc_Votos_No_Marcados V="024,60"/>
+          <Votos_Nulos V="4291"/>
+          <Porc_Votos_Nulos V="024,95"/>
+        </lin>
+        <lin>
+          <Pregunta V="004"/>
+          <Total_Sufragantes V="17197"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="8208"/>
+          <Porc_Votos_Validos V="047,72"/>
+          <Votos_No_Marcados V="5291"/>
+          <Porc_Votos_No_Marcados V="030,76"/>
+          <Votos_Nulos V="3698"/>
+          <Porc_Votos_Nulos V="021,50"/>
+        </lin>
+        <lin>
+          <Pregunta V="005"/>
+          <Total_Sufragantes V="17197"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="8922"/>
+          <Porc_Votos_Validos V="051,88"/>
+          <Votos_No_Marcados V="4264"/>
+          <Porc_Votos_No_Marcados V="024,79"/>
+          <Votos_Nulos V="4011"/>
+          <Porc_Votos_Nulos V="023,32"/>
+        </lin>
+        <lin>
+          <Pregunta V="006"/>
+          <Total_Sufragantes V="17197"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="8055"/>
+          <Porc_Votos_Validos V="046,83"/>
+          <Votos_No_Marcados V="4417"/>
+          <Porc_Votos_No_Marcados V="025,68"/>
+          <Votos_Nulos V="4725"/>
+          <Porc_Votos_Nulos V="027,47"/>
+        </lin>
+        <lin>
+          <Pregunta V="007"/>
+          <Total_Sufragantes V="17197"/>
+          <Porc_Sufragantes V="100,00"/>
+          <Abstencion V="0"/>
+          <Porc_Abstencion V="000,00"/>
+          <Votos_Validos V="8343"/>
+          <Porc_Votos_Validos V="048,51"/>
+          <Votos_No_Marcados V="4813"/>
+          <Porc_Votos_No_Marcados V="027,98"/>
+          <Votos_Nulos V="4041"/>
+          <Porc_Votos_Nulos V="023,49"/>
+        </lin>
+      </Detalle_Pregunta>
+      <Detalle_Opcion>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="4731"/>
+          <Porc V="053,84"/>
+          <Pregunta V="001"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="4055"/>
+          <Porc V="046,15"/>
+          <Pregunta V="001"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="4835"/>
+          <Porc V="053,30"/>
+          <Pregunta V="002"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="4236"/>
+          <Porc V="046,69"/>
+          <Pregunta V="002"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="4296"/>
+          <Porc V="049,52"/>
+          <Pregunta V="003"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="4378"/>
+          <Porc V="050,47"/>
+          <Pregunta V="003"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="3631"/>
+          <Porc V="044,23"/>
+          <Pregunta V="004"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="4577"/>
+          <Porc V="055,76"/>
+          <Pregunta V="004"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="4367"/>
+          <Porc V="048,94"/>
+          <Pregunta V="005"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="4555"/>
+          <Porc V="051,05"/>
+          <Pregunta V="005"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="3704"/>
+          <Porc V="045,98"/>
+          <Pregunta V="006"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="4351"/>
+          <Porc V="054,01"/>
+          <Pregunta V="006"/>
+        </lin>
+        <lin>
+          <Opcion V="001"/>
+          <Votos V="3662"/>
+          <Porc V="043,89"/>
+          <Pregunta V="007"/>
+        </lin>
+        <lin>
+          <Opcion V="002"/>
+          <Votos V="4681"/>
+          <Porc V="056,10"/>
+          <Pregunta V="007"/>
+        </lin>
+      </Detalle_Opcion>
+    </lin>
+  </Detalle_Circunscripcion>
+</Boletin>
+</Boletin_Consolidado>
