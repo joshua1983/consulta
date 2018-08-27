@@ -19,24 +19,87 @@ body{
     font-family: 'Lato';
     font-size: 0.8em;
 }
+
+.contenedor{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+
+.encabezado_img{
+    background-image: url(../img/anti_cab.jpg);
+    height: 116px;
+    background-repeat: no-repeat;
+}
+#div_mapa{
+    padding-top: 2%;
+}
+#div_datos_mapa{
+    box-shadow: 10px 10px 5px grey;
+    font-family: 'yanone';
+    font-size: 13px;
+}
+.tabla_datos_extra{
+    background-color: #fefefe;
+    font-size: 14px
+}
+.table_datos_extra_td{
+    background-color: #e6e7e9;
+}
+.no_div_datos_datalle{
+    visibility:hidden;
+    
+}
+.div_datos_detalle{
+    visibility:visible;
+    position: fixed;
+    
+}
+
+
 #estadisticas{
     padding-left: 4%;
     text-align: right
 }
+.lista_preguntas{
+    padding-top:13%
+}
 #consultas{
     padding-left: 1%;
     justify-content: center;
+    align-content: center;
+    text-align: left;
+    width: 1013px;
+    background-color: white;
 }
-#comMapaSantander{
-    padding-top: 13%
+.piedepagina {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #808080;
+    float: left;
+    clear: both;
+    background-color: white;
+    /* border-top: 3px solid #ddd; */
 }
 #comMapaColombia{
     padding-top: 13%
 }
-#img_encabezado{
-    text-align: center;
-    align-items: center;
-    align-content: center;
+
+.box_pregunta{
+    padding: 70%;
+    background-color: #6e6e6e;
+    color: rgb(255, 255, 255);
+}
+.box_selpregunta{
+    padding: 70%;
+    background-color: #91ca03;
+    color: rgb(255, 255, 255);
+}
+.box_titulo{
+    padding: 1%;
 }
 .img_si{
     width: 100%;
@@ -45,12 +108,17 @@ body{
 .img_no{
     width: 100%;
 }
+.titulo_preguntas_web{
+    display: none;
+}
 .titulo_mapa_santander_web{
     text-align: left;
+    padding-left: 10%;
     font-size: 14px;
     font-family: 'Lato', sans-serif;
     color: rgb(212, 126, 29);
     text-decoration: underline rgb(212, 126, 29);
+    align-content: center
 }
 .incluir_texto{
     text-align:center;
@@ -74,8 +142,8 @@ body{
 .incluir_texto3{ 
     border-bottom:solid 1px #928f87;
 }
-.colombia_bt, .santander_bt{ position:absolute; float:right; right:10px; top:19%; text-align:center; width:84px; height:86px; border:solid 1px #cfcfcf; cursor:pointer; z-index:100; background:url(../img/colombia.png) #dee2e3 17px 19px; background-repeat: no-repeat;}
-.santander_bt{ top:136px; background:url(../img/santa.png) #dee2e3 14px 19px; background-repeat: no-repeat;}
+.colombia_bt, .santander_bt{ position:absolute; float:right; right:11%; top:53%; text-align:center; width:84px; height:86px; border:solid 1px #cfcfcf; cursor:pointer; z-index:100; background:url(../img/colombia.png) #dee2e3 17px 19px; background-repeat: no-repeat;}
+.santander_bt{  background:url(../img/santa.png) #dee2e3 14px 19px; background-repeat: no-repeat;}
 .colombia_bt .titu, .santander_bt .titu {  font-family:"oswald-light",Verdana, Geneva, sans-serif; font-size:15px; color:#424242; background:#91ca03; color:#fff;}
 .colombia_bt:hover{  background:url(../img/colombia2.png) #dee2e3 17px 19px; background-repeat: no-repeat;}
 .santander_bt:hover{ background:url(../img/santa2.png) #dee2e3 14px 19px; background-repeat: no-repeat;}
@@ -84,38 +152,113 @@ body{
 *  Preguntas
 */
 .preguntas{
-    padding-top: 5%;
+    padding-top: 0%;
 }
+
 .pregunta{
     padding: 1%;
 }
 .numero{
     background-color: gainsboro;
-}
-
-.numeroBajoUmbral{
-    background-color: aliceblue;
-    color: black;
-    border-color:white;
-}
-
-.numeroAltoUmbral{
-    background-color: #91ca03;
     color: white;
-    border-color:white;
+    padding: 3%;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 475px) {
+    #div_mapa{
+        display: none;
+    }
+    .encabezado_img{
+        display: none;
+    }
+    .row_preguntas{
+        display: none;
+    }
+    #estadisticas{
+        display: none;
+    }
+    #consultas{
+        padding-left: 5%;
+        /* justify-content: center; */
+        /* align-content: center; */
+        /* text-align: left; */
+        width: 100%; 
+    }
+    .numero{
+        background-color: gainsboro;
+        color: white;
+        padding: 2%;
+        vertical-align: middle;
+    }
+
 }
 
 @media screen and (max-width: 1012px) {
     #img_encabezado{
         display: none;
     }
+    .colombia_bt{
+        top: 40%;
+        right: 4%;
+        top: 19%;
+    }
+    .santander_bt{  
+        right:3%; 
+        top:54%;
+    }
+    .encabezado_img{
+        display: none;
+    }
+
 }
 @media screen and (min-width: 1013px){
     #btn_ver_resultados{
         display: none;
     }
     .colombia_bt{
-        top: 29%;
-        right: 8%;
+        top: 54%;
+        right: 17%;
+    }
+    .santander_bt{  
+        right:17%; 
+        top:54%;
+    }
+    .titulo_mapa_santander_web{
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        color: #878988;
+        align-content: center;
+        text-decoration-color: white;
+    }
+    .titulo_preguntas_web{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        color: #878988;
+        align-content: center;
+        text-decoration-color: white;
+    }
+    .encabezado_img{
+        background-image: url(../img/encabezado_web.png);
+        background-repeat: no-repeat;
+        height: 116px;
+        
+    }
+    .consultas{
+        background-color: white;
+    }
+    .contenedor{
+        background-image: url(../img/fondo.png);
+    }
+}
+@media screen and (min-width: 1500px){
+    .box_pregunta{
+        padding: 50%
+    }
+    .box_selpregunta{
+        padding: 50%
     }
 }

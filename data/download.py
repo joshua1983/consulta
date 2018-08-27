@@ -3,16 +3,17 @@ import xml.etree.ElementTree as ET
 import os
 import tarfile
 import json
-
+import string 
+import re
 
 """
 
-Funcion de procesamiento de archivos nacional en general
+Funciones de procesamiento de archivos
 
 """
 
 def procesarNacional(file):
-    print "Procesando Nacional: " +os.path.abspath(file)
+    print "Procesando Nacional: " +file
     with open(file,"r") as file:
         tree = ET.parse(file)
         root = tree.getroot()
@@ -117,11 +118,9 @@ def procesarNacional(file):
                             else:
                                 datos_preguntas["pregunta7"]["votosno"] = votos
     datos_estadisticas_nac =  '{ "estadisticas": '+ json.dumps(estadisticas)+ ', "preguntas": ' + json.dumps(datos_preguntas) +'}'
-    print datos_estadisticas_nac
     os.chdir("..")
     with open("nacional.json", "w") as nac:
         nac.write(datos_estadisticas_nac)
-
 
 """
 
@@ -129,18 +128,178 @@ Funcion de procesamiento de archivos departamentales por departamento
 
 """
 
-def procesarDepartamental(self, file):
-    print "Procesando Nacional: " +os.path.abspath(file)
-    with open(file,"r") as file:
+def procesarDepartamental(archivo):
+    print "Procesando Departamental: " +os.path.abspath(archivo)
+    with open(archivo, 'r') as file:
+        tree = ET.parse(file)
+        root = tree.getroot()
+        num_pregunta = ""
+        pregunta = ""
+        votos = ""
+        opcion = ""
+        votosSi = ""
+        votosNo = ""
+        salida = '{ "datos":{'
+        salidaVal = '{ "valores":{'
+        for child in root.iter('Boletin'):
+            # boletin por departamento
+            for data in child:
+                if data.tag == 'Departamento':
+                    salida += '"' + data.attrib.get("V") + '":{'
+                    salidaVal += '"' + data.attrib.get("V") + '":{'
+                for pregunta in data.iter('Detalle_Pregunta'):
+                    #Armado por cada pregunta
+                    num_pregunta = ""
+                    for data_pregunta_lin in pregunta.iter("lin"):
+                        for data_pregunta in data_pregunta_lin:
+                            if data_pregunta.tag == 'Pregunta':
+                                salida += '"'+data_pregunta.attrib.get("V")+'":{'
+                                num_pregunta = data_pregunta.attrib.get("V")
+                            else:
+                                if data_pregunta.tag == 'Porc_Votos_Nulos':
+                                    salida += '"'+data_pregunta.tag+'":"'+data_pregunta.attrib.get("V")+'"'
+                                    if num_pregunta == '007':
+                                        salida += "}"
+                                else:
+                                    salida += '"'+data_pregunta.tag+'":"'+data_pregunta.attrib.get("V")+'",'
+                        salida += "},"
+                    salida = string.replace(salida, "},}", "}}")
+                    salida = string.replace(salida, "},}", "}}")
+                # cargar los valores de cada pregunta para el departamento            
+                preguntaVal = ""
 
+                for valores in data.iter('Detalle_Opcion'):
+                    #Armado por cada pregunta
+                    for data_pregunta_lin in valores.iter("lin"):
+                        preguntaLin = preguntaVal
+                        for data_pregunta in data_pregunta_lin:
+                            #datos de la opcion lin  
+                            if data_pregunta.tag == 'Pregunta':
+                                preguntaVal = data_pregunta.attrib.get("V")
+                                if preguntaLin == '':
+                                    preguntaLin = preguntaVal
+                                if preguntaVal == preguntaLin and votosNo != '':
+                                    salidaVal += '"'+str(preguntaLin)+'":{"si":"'+votosSi+'","no":"'+votosNo+'"},'
+                                    votosSi = ""
+                                    votosNo = ""
+                                    opcion = ""
+                                else:
+                                    preguntaLin = preguntaVal     
+                            if data_pregunta.tag == 'Opcion':
+                                opcion = data_pregunta.attrib.get("V")
+                            if data_pregunta.tag == 'Votos':
+                                votos = data_pregunta.attrib.get("V")
+                                if opcion == '001':
+                                    votosSi = votos
+                                if opcion == '002':
+                                    votosNo = votos
+                    salidaVal += "},"
+        salidaVal += '}}'
+        salidaVal = string.replace(salidaVal, "},}", "}}")
+        salidaVal = string.replace(salidaVal, "},}", "}}")
+        with open("dpto.json", "w") as dpto:
+            salida = string.replace(salida, "},}", "}}") + '}}'
+            salida = string.replace(salida, "},}", "}}")
+            dpto.write(salida)
+        with open("dptoval.json", "w") as dptoval:
+            dptoval.write(salidaVal)
+
+"""
+
+Funcion de procesamiento de archivos Capitales
+
+"""
+def procesarCapital(boletin):
+    
+    os.chdir(os.getcwd()+'/'+boletin)
+    salida = ''
+    print "Procesando capitales para: "+boletin
+    patronSantander = re.compile('BOL_CN_27[0-9][0-9][0-9]_'+boletin+'.xml')
+    for archivo in os.listdir('.'):
+        #procesa datos para santander
+        if patronSantander.match(archivo):
+            with open(archivo, 'r') as file:
+                tree = ET.parse(file)
+                root = tree.getroot()
+                num_pregunta = ""
+                pregunta = ""
+                votos = ""
+                opcion = ""
+                votosSi = ""
+                votosNo = ""
+                codigoCap = os.path.basename(archivo)
+                codCap = codigoCap[9:12]
+                salida += ' "datos'+codCap+'":{'
+                salidaVal = ' "valores'+codCap+'":{'
+                for child in root.iter('Boletin'):
+                    # boletin por departamento
+                    for data in child:
+                        if data.tag == 'Municipio':
+                            salida += '"' + data.attrib.get("V") + '":{'
+                            salidaVal += '"' + data.attrib.get("V") + '":{'
+                        for pregunta in data.iter('Detalle_Pregunta'):
+                            #Armado por cada pregunta
+                            num_pregunta = ""
+                            for data_pregunta_lin in pregunta.iter("lin"):
+                                for data_pregunta in data_pregunta_lin:
+                                    if data_pregunta.tag == 'Pregunta':
+                                        salida += '"'+data_pregunta.attrib.get("V")+'":{'
+                                        num_pregunta = data_pregunta.attrib.get("V")
+                                    else:
+                                        if data_pregunta.tag == 'Porc_Votos_Nulos':
+                                            salida += '"'+data_pregunta.tag+'":"'+data_pregunta.attrib.get("V")+'"'
+                                            if num_pregunta == '007':
+                                                salida += "}"
+                                        else:
+                                            salida += '"'+data_pregunta.tag+'":"'+data_pregunta.attrib.get("V")+'",'
+                                salida += "},"
+                                salida = string.replace(salida, "},}", "}}")
+
+                        # cargar los valores de cada pregunta para el departamento            
+                        preguntaVal = ""
+                        for valores in data.iter('Detalle_Opcion'):
+                            #Armado por cada pregunta
+                            for data_pregunta_lin in valores.iter("lin"):
+                                preguntaLin = preguntaVal
+                                for data_pregunta in data_pregunta_lin:
+                                    #datos de la opcion lin  
+                                    if data_pregunta.tag == 'Pregunta':
+                                        preguntaVal = data_pregunta.attrib.get("V")
+                                        if preguntaLin == '':
+                                            preguntaLin = preguntaVal
+                                        if preguntaVal == preguntaLin and votosNo != '':
+                                            salidaVal += '"'+str(preguntaLin)+'":{"si":"'+votosSi+'","no":"'+votosNo+'"},'
+                                            votosSi = ""
+                                            votosNo = ""
+                                            opcion = ""
+                                        else:
+                                            preguntaLin = preguntaVal     
+                                    if data_pregunta.tag == 'Opcion':
+                                        opcion = data_pregunta.attrib.get("V")
+                                    if data_pregunta.tag == 'Votos':
+                                        votos = data_pregunta.attrib.get("V")
+                                        if opcion == '001':
+                                            votosSi = votos
+                                        if opcion == '002':
+                                            votosNo = votos
+                            salidaVal += "},"
+                salidaVal += '}}'
+                salidaVal = string.replace(salidaVal, "},}", "}}")
+                salida = salida + salidaVal
+                salida = string.replace(salida, "},}", "}}") + ","
+    retorno = '{"data":{' + string.replace(salida, "},}", "}}") + '}}'
+    writeFile = string.replace(retorno, "},}", "}}")
+    os.chdir('../')
+    with open("capitales.json", "w") as cap:
+        cap.write(writeFile)
 
 
 
 # Url index de los archivos
 urlIndex = "https://descargasconsulta2018.registraduria.gov.co/c99descargas/DEPLINDEX.xml"
 
-# autorizacion para descargar
-base64String = base64.b64encode('%s:%s' % ("usuario138","nahNg4fe"))
+# autorizacion para descargar  COLOCAR USUARIO Y CONTRASEÑA
+base64String = base64.b64encode('%s:%s' % ("",""))
 request = urllib2.Request(urlIndex)
 request.add_header("Authorization", "Basic %s" % base64String)
 
@@ -148,7 +307,7 @@ request.add_header("Authorization", "Basic %s" % base64String)
 xmlIndex = urllib2.urlopen(request)
 
 tree = ET.parse(xmlIndex)
-root = tree.getroot() # root = <Avance>
+root = tree.getroot() # root = <Avance> 
 
 i=0
 boletin = ''
@@ -158,7 +317,7 @@ for dpto in root:
         if not os.path.exists(boletin):
             with open("boletin.json", "w") as bol:
                 bol.write(boletin)
-            os.mkdir(boletin, False)
+            os.mkdir(boletin, 0o777)
     if i>1:
         urlDownload = dpto.text
         nombreArchivo = urlDownload.split('/')[-1]
@@ -177,7 +336,14 @@ for dpto in root:
     i=i+1
 print "Procesando boletin: "+str(boletin)
 os.chdir(boletin)
+path = os.getcwd() + "/"
 for file in os.listdir('.'):
+    #procesa datos a nivel nacional
     if file == "BOL_CN_00000_"+boletin+".xml" :
-        procesarNacional(os.path.abspath("BOL_CN_00000_"+boletin+".xml"))
-        
+        procesarNacional(path+file)
+    #procesa datos departamentales
+    if file == "BOL_CN_DE000_"+boletin+".xml":
+        procesarDepartamental(path+file)
+#procesa datos para santander
+procesarCapital(boletin)
+    

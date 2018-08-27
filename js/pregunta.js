@@ -37,6 +37,26 @@ var comp_voto = Vue.component('votos',{
         },
         bajoUmbral: function(){
             return (this.valor < ( (this.validos / 2) +1 ) );
+        },
+        cssUmbral: function(){
+            var result = '';
+            let colorOk = "#91ca03";
+            let colorNo = "#e6e7e9";
+            let alineacion = '';
+            let porcentaje = ( this.valor / this.validos) *100;
+            if (this.tipo == 'si'){
+                alineacion = 'right'
+            }else{
+                alineacion = 'left';
+            }
+            
+            if (this.sobreUmbral ){
+                result = "text-align:'"+alineacion+"' ;padding:1%; display: table-cell;vertical-align: middle; border-color:white;width:100%; height:100%;background-image: linear-gradient("+alineacion+", "+colorOk+", "+colorOk+" "+porcentaje+"%, transparent "+porcentaje+"%, transparent 100%); background-image: -webkit-linear-gradient("+alineacion+", "+colorOk+", "+colorOk+" "+porcentaje+"%, transparent "+porcentaje+"%, transparent 100%); border-width: 2px; border-style: solid";
+            }
+            if (this.bajoUmbral ){
+                result = "text-align:'"+alineacion+"' ;padding:1%; display: table-cell;vertical-align: middle; border-color:white;width:100%;height:100%;background-image: linear-gradient("+alineacion+", "+colorNo+", "+colorNo+" "+porcentaje+"%, transparent "+porcentaje+"%, transparent 100%); background-image: -webkit-linear-gradient("+alineacion+", "+colorNo+", "+colorNo+" "+porcentaje+"%, transparent "+porcentaje+"%, transparent 100%); border-width: 2px; border-style: solid";
+            }
+            return result;
         }
     },
     methods: {

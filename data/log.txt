@@ -1,0 +1,41 @@
+Descargando: BOL_CN_01_2717.tar.gz
+Descargando: BOL_CN_03_2717.tar.gz
+Descargando: BOL_CN_05_2717.tar.gz
+Descargando: BOL_CN_07_2717.tar.gz
+Descargando: BOL_CN_09_2717.tar.gz
+Descargando: BOL_CN_11_2717.tar.gz
+Descargando: BOL_CN_12_2717.tar.gz
+Descargando: BOL_CN_13_2717.tar.gz
+Descargando: BOL_CN_15_2717.tar.gz
+Descargando: BOL_CN_16_2717.tar.gz
+Descargando: BOL_CN_17_2717.tar.gz
+Descargando: BOL_CN_19_2717.tar.gz
+Descargando: BOL_CN_21_2717.tar.gz
+Descargando: BOL_CN_23_2717.tar.gz
+Descargando: BOL_CN_24_2717.tar.gz
+Descargando: BOL_CN_25_2717.tar.gz
+Descargando: BOL_CN_26_2717.tar.gz
+Descargando: BOL_CN_27_2717.tar.gz
+Descargando: BOL_CN_28_2717.tar.gz
+Descargando: BOL_CN_29_2717.tar.gz
+Descargando: BOL_CN_31_2717.tar.gz
+Descargando: BOL_CN_40_2717.tar.gz
+Descargando: BOL_CN_44_2717.tar.gz
+Descargando: BOL_CN_46_2717.tar.gz
+Descargando: BOL_CN_48_2717.tar.gz
+Descargando: BOL_CN_50_2717.tar.gz
+Descargando: BOL_CN_52_2717.tar.gz
+Descargando: BOL_CN_54_2717.tar.gz
+Descargando: BOL_CN_56_2717.tar.gz
+Descargando: BOL_CN_60_2717.tar.gz
+Descargando: BOL_CN_64_2717.tar.gz
+Descargando: BOL_CN_68_2717.tar.gz
+Descargando: BOL_CN_72_2717.tar.gz
+Descargando: BOL_CN_88_2717.tar.gz
+Descargando: BOL_CN_TOT_2717.tar.gz
+Descargando: BOL_CN_DE_2717.tar.gz
+Descargando: BOL_CN_CA_2717.tar.gz
+Procesando boletin: 0027
+Procesando Nacional: /home/centos/0027/BOL_CN_00000_0027.xml
+Procesando Departamental: /home/centos/0027/BOL_CN_DE000_0027.xml
+Procesando capitales para: 0027
