@@ -298,8 +298,13 @@ def procesarCapital(boletin):
 # Url index de los archivos
 urlIndex = "https://descargasconsulta2018.registraduria.gov.co/c99descargas/DEPLINDEX.xml"
 
-# autorizacion para descargar  COLOCAR USUARIO Y CONTRASEÑA
+""" 
+
+	Autorizacion para descargar  COLOCAR USUARIO Y CONTRASEÑA
+
+"""
 base64String = base64.b64encode('%s:%s' % ("",""))
+
 request = urllib2.Request(urlIndex)
 request.add_header("Authorization", "Basic %s" % base64String)
 
